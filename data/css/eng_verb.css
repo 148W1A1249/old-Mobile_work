@@ -1,0 +1,38 @@
+body{
+	margin:0;
+	padding: 0;
+	background-color: #b2fab4;
+}
+.question{
+	background-color: pink;
+	margin-top: 70px;
+}
+span{
+color: white;
+}
+span:hover{
+background-color: gray;
+}
+.keyword{
+	margin-top: 30px;
+	background-color: white;
+	padding: 20px;
+}
+content{
+	font-weight: bolder;
+	color: black;
+}
+.type{
+	margin: 10px;
+	font-size: 20px;
+}
+.btn_next{
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	float: right;
+	background-color: transparent;
+	border: none;
+	margin: 20px;
+}

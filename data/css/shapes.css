@@ -1,0 +1,18 @@
+body{
+	background: #B2D7D9;
+}
+.drop_box{
+	width: 95px;
+	height: 95px;
+	text-align: center;
+	background: white;
+	margin: 15px 5px 5px 15px;
+	border-radius: 5px;
+}
+.drop_box p{
+	font-size: 18px;
+	font-style: italic;
+	text-align: center;
+	color: red;
+	padding: 20px 5px 5px 5px;
+}

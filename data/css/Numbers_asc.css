@@ -1,0 +1,26 @@
+body{
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	background-image: linear-gradient(60deg,#FFD54F,#FFECB3)
+}
+.drop_box{
+	float: left;
+	width: 70px;
+	height: 70px;
+	border-radius: 12px;
+	background: white;
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+.drop_box p{
+	font-size: 18px;
+	margin: 5px;
+}
+.draggable{
+	float: left;
+	margin-left: 25px;
+	font-weight: bolder;
+}

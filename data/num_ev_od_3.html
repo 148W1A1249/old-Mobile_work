@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>welcome</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/num_ev_od.css">
+</head>
+<body>
+
+
+    <div class="container" style="width: 100%;margin-top: 10px;margin-left: 0;font-weight: bolder;letter-spacing: 1px;">        
+        <div class="col-xs-10 col-md-10 col-lg-10">
+            <h1>Drage the <span style="font-size: 28px;font-weight: bolder; color: #bb002f;letter-spacing: 4px;"><br>Numbers</span> into a Box </h1>
+        </div>
+    </div>
+
+<div class="container-fluid">
+    <div class="row">   
+        <div class="col-xs-3 col-md-3 col-lg-3 container_box" style="height: auto;border-radius: 12px;position: absolute;margin-top: 60px;margin-left: 80px;background-color: white;padding-bottom: 5px;">
+            <h4>Even number</h4>
+            <hr>
+            <div class="drop_box" id="drop-1"></div>
+            <div class="drop_box" id="drop-1"></div>
+            <div class="drop_box" id="drop-1"></div>
+            <div class="drop_box" id="drop-1"></div>
+            <div class="drop_box" id="drop-1"></div>
+            <div class="drop_box" id="drop-1"></div>
+            <div class="drop_box" id="drop-1"></div>
+            <div class="drop_box" id="drop-1"></div>
+            <div class="drop_box" id="drop-1"></div>
+            <div class="drop_box" id="drop-1"></div>
+            <div class="drop_box" id="drop-1"></div>
+            <div class="drop_box" id="drop-1"></div>
+            <div class="drop_box" id="drop-1"></div>
+            <div class="drop_box" id="drop-1"></div>
+            <div class="drop_box" id="drop-1"></div>
+            <div class="drop_box" id="drop-1"></div>
+            <div class="drop_box" id="drop-1"></div>
+            <div class="drop_box" id="drop-1"></div>
+            <div class="drop_box" id="drop-1"></div>
+        </div>
+        <div class="col-xs-3 col-md-3 col-lg-3" style="height: auto;border-radius: 12px;margin-left: 5px;position: absolute;margin-top: 60px;margin-left: 185px;background-color: white;padding-bottom: 5px;">
+            <h4>Odd number</h4>
+            <hr>
+            <div class="drop_box" id="drop-0"></div>
+            <div class="drop_box" id="drop-0"></div>
+            <div class="drop_box" id="drop-0"></div>
+            <div class="drop_box" id="drop-0"></div>
+            <div class="drop_box" id="drop-0"></div>
+            <div class="drop_box" id="drop-0"></div>
+            <div class="drop_box" id="drop-0"></div>
+            <div class="drop_box" id="drop-0"></div>
+            <div class="drop_box" id="drop-0"></div>
+            <div class="drop_box" id="drop-0"></div>
+            <div class="drop_box" id="drop-0"></div>
+            <div class="drop_box" id="drop-0"></div>
+            <div class="drop_box" id="drop-0"></div>
+            <div class="drop_box" id="drop-0"></div>
+            <div class="drop_box" id="drop-0"></div>
+            <div class="drop_box" id="drop-0"></div>
+            <div class="drop_box" id="drop-0"></div>
+            <div class="drop_box" id="drop-0"></div>
+            <div class="drop_box" id="drop-0"></div>
+        </div> 
+
+        <div class="col-xs-4 col-md-4 col-lg-4" style="height: 100vh;position: absolute;margin-top: 200px;">
+            <h1 style="color: black;" class="draggable" id="img-1">88</h1>
+            <h1 style="color: red;" class="draggable" id="img-0">77</h1>
+            <h1 style="color: gray;" class="draggable" id="img-0">111</h1>
+            <h1 style="color: #a30000;" class="draggable" id="img-0">99</h1>
+            <h1 style="color: maroon;" class="draggable" id="img-1">96</h1>
+            <h1 style="color: #76ff03;" class="draggable" id="img-1">126</h1>
+        </div> 
+        <div class="col-xs-4 col-md-4 col-lg-4" style="height: 100vh;position: absolute;margin-top: 200px;margin-left: 300px;">
+            <h1 style="color: lightskyblue;" class="draggable" id="img-1">100</h1>
+            <h1 style="color: #005cb2;" class="draggable" id="img-0">103</h1>
+            <h1 style="color: green;" class="draggable" id="img-1">106</h1>
+            <h1 style="color: #c56200;" class="draggable" id="img-1">82</h1>
+            <h1 style="color: #29434e;" class="draggable" id="img-0">91</h1>
+            <h1 style="color: blue;" class="draggable" id="img-0">117</h1>
+        </div> 
+       
+        
+    </div>
+    
+</div>
+<div class="modal" id="winModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="header">
+            <center><h1>Excellent</h1></center>
+        </div>
+        <center>
+            <img class="animated bounce" src="../img/check.png" style="width:110px;height: 100px"><br><br>
+        <button type="button" class="btn btn-primary"  onclick="window.location.href='#'">Next</button>
+        </center>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../js/swiper.min.js"></script>
+<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/popper.min.js"></script>
+<script src="../js/jquery-ui.js"></script>
+<script src="../js/touch.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+$(init);
+
+function init() {
+
+    $('.draggable').each(function () {
+        var num = $(this).prop('id').replace('img-', '');
+        $(this).data('number', num).attr('id', 'card' + num).draggable({
+            containment: '#content',
+            cursor: 'pointer',
+            revert: true
+        });
+
+    });
+
+    $('.drop_box').each(function () {
+        var num = $(this).prop('id').replace('drop-', '');
+        $(this).data('number', num).droppable({
+            hoverClass: 'hovered',
+            drop: handleCardDrop
+        });
+        
+    });
+}
+
+var totalCards = 12;
+var totalMatches = 0;
+
+function handleCardDrop(event, ui) {
+    var slotNumber = $(this).data('number');
+    var cardNumber = ui.draggable.data('number');
+    // console.log(slotNumber);
+    //console.log($(this));
+    if (slotNumber == cardNumber) {
+        totalMatches++;
+        $("#drop-"+cardNumber).empty();
+        alert("your score is:"+totalMatches);
+        // ui.draggable.addClass('correct');
+        // ui.draggable.addClass('fade');
+        ui.draggable.draggable('disable');
+        $(this).droppable('disable');
+        // $(this).addClass('fade');
+        
+        ui.draggable.draggable('option', 'revert', false);
+    }
+
+    if (totalMatches == totalCards) {
+        // success
+        // alert("Excellent your score is:"+totalMatches);
+        // console.log("success");
+        $("#winModal").modal();
+    }
+
+}
+
+});
+</script>
+
+
+
+</body>
+</html>

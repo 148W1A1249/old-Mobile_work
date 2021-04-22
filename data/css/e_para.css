@@ -1,0 +1,44 @@
+body{
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	background-image: linear-gradient(60deg,#FFD54F,#FFECB3)
+}
+.drop_box{
+	width: 100px;
+	height: 60px;
+	text-align: center;
+	background: #004134;
+	border-radius: 5px;
+}
+.ques_box {
+      height: 100%;
+      text-align: center;
+      border-radius: 12px;
+      border: 4px solid #004134;
+      font-size: 18px;
+      background: #fff;
+    }
+.ques_box button{
+      float: right;
+      margin-right: 20px;
+      margin-bottom: 10px;
+      border: none;
+      background: #004134;
+      color: white;
+      border-radius: 12px;
+    }
+ .ans_box{
+ 	color: white;
+ 	font-weight: bolder;
+ 	margin: 15px;
+ 	float: left;
+ }
+ .ans_card{
+  font-size: 18px;
+  font-weight: bolder;
+  color: white;
+  padding: 2px;
+  margin:10px;
+ }

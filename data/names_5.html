@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>welcome</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/names.css">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+</head>
+<body style="background-color: #e040fb;">
+
+<!-- secton 1 start -->
+
+    <div class="container" style="width: 100%;margin-top: 10px;margin-left: 0;font-weight: bolder;letter-spacing: 1px;">
+        
+        <div class="col-xs-10 col-md-10 col-lg-10">
+            <h1>Fill the <span style="font-size: 28px;font-weight: bolder; color: red;">Boxes </span> with Correct Answer<br><span style="font-size: 22px; font-weight: bolder; color: green;">(word practice)</span></h1>
+        </div>
+    </div>    
+
+<!-- section1 End -->
+
+<!-- section2 Start -->
+    <div class="container">
+        <center><h3 style="color: #e040fb;padding: 10px;">Fill the box with suitable word...</h3></center>
+    </div>
+
+    <div class="container" style="width: 80%;height: auto;background-color: white;border-radius: 20px;">
+       <center><img src="../img/names/light.png" width="80%" height="40%" style="padding: 15px;"></center> 
+    </div>
+
+    <div class="container drop_container">
+        <div class="drop_box drop_1" id="drop-1"></div>
+        <div class="drop_box drop_2" id="drop-2"></div>
+        <div class="drop_box drop_3" id="drop-3"></div>
+        <div class="drop_box drop_4" id="drop-4"></div>
+        <div class="drop_box drop_5" id="drop-5"></div>
+    </div>
+     <div class="container drop_container">
+        <div><h4 class="draggable img_2" id="img-2">I</h4></div>
+        <div><h4 class="draggable img_5" id="img-5">T</h4></div>
+        <div><h4 class="draggable img_1" id="img-1">L</h4></div>
+        <div><h4 class="draggable img_3" id="img-3">G</h4></div>
+        <div><h4 class="draggable img_4" id="img-4">H</h4></div>
+    </div>
+
+    <!-- <div class="drop_box" id="drop-1" style="width: 150px;height: 60px;margin-top: 20px;background-color: white;border-radius: 12px;float: right;margin-right: 20px;text-align: center;font-weight: bold;">Answer</div> -->
+
+<!-- section2 End -->
+
+
+<!-- end -->
+ <div class="container" style="margin-top: 30px;">
+        <center>
+            <img onclick="window.location.href='names_6.html'" src="../img/arrow.svg" width="50px" style="float: right;">
+        </center>
+    </div>
+    
+	<div class="modal" id="winModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="header">
+                <center><h1>Excellent</h1></center>
+            </div>
+            <center>
+                <img class="animated bounce" src="../img/check.png" style="width:110px;height: 100px"><br><br>
+            <button type="button" class="btn btn-primary"  onclick="window.location.href='Num_asc_1.html'">Next</button>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- end -->
+
+<script src="../js/swiper.min.js"></script>
+<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/popper.min.js"></script>
+<script src="../js/jquery-ui.js"></script>
+<script src="../js/touch.js"></script>
+<!-- <script>
+var swiper = new Swiper('.swiper-container', {
+  spaceBetween:5,
+  slidesPerView:3
+  pagination: {
+    el: '.swiper-pagination',
+    dynamicBullets: true,
+  },
+  navigation: {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev',
+  },
+});
+</script> -->
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+$(init);
+
+function init() {
+
+    $('.draggable').each(function () {
+        var num = $(this).prop('id').replace('img-', '');
+        $(this).data('number', num).attr('id', 'card' + num).draggable({
+            containment: '#content',
+            cursor: 'pointer',
+            revert: true
+        });
+
+    });
+
+    $('.drop_box').each(function () {
+        var num = $(this).prop('id').replace('drop-', '');
+        $(this).data('number', num).droppable({
+            hoverClass: 'hovered',
+            drop: handleCardDrop
+        });
+        
+    });
+}
+
+var totalCards = 10;
+var totalMatches = 0;
+
+function handleCardDrop(event, ui) {
+    var slotNumber = $(this).data('number');
+    var cardNumber = ui.draggable.data('number');
+    // console.log(slotNumber);
+    //console.log($(this));
+    if (slotNumber == cardNumber) {
+        totalMatches++;   
+        $(".drop_box").empty();     
+        $(".drop_"+cardNumber).css("background","none");        
+        $(".img_"+cardNumber).css("color","black");
+        $(".img_"+cardNumber).css("font-size","28px");
+        ui.draggable.draggable('disable');
+        $(this).droppable('disable');        
+        ui.draggable.draggable('option', 'revert', false);
+    }
+
+    if (totalMatches >= 3) {
+         $("#next_btn_1").click(function(){
+            $("#box_2").css("display","block")
+            $("#box_1").css("display","none")
+        });
+    }
+    if (totalMatches == totalCards) {
+        // success
+        // alert("Excellent your score is:"+totalMatches);
+        // console.log("success");
+        $("#winModal").modal();
+    }
+
+}
+
+});
+</script>
