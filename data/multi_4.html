@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>welcome</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/Addition.css">
+</head>
+<body>
+
+<!-- secton 1 start -->
+
+	<div class="container" style="width: 100%;margin-top: 30px;margin-left: 0;font-weight: bolder;letter-spacing: -1px;">		
+		<div class="col-xs-10 col-md-10 col-lg-10">
+	     	<h1 style="font-weight: bolder;">Fill the Box with Suitable <span style="font-size: 28px;font-weight: bolder; color: red;">Number (<span style="font-size: 28px;font-weight: bolder;color: black">Multiplication</span>)</span></h1>
+		</div>
+	</div>
+
+	<div class="conatiner-fluid" style="margin-top: 10px; background: #FAFAFA;border-top-left-radius: 30px;border-top-right-radius: 30px;">
+		<center><img src="../img/maths4.png" style="margin-top: 10px;margin-bottom: 10px;"></center>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6 col-md-6 col-lg-6" style="height: 200px;width: 100%;padding: 15px;">
+					
+							<div class="ques_box" id="q1">								
+								<h1> 4 x 9 = ? </h1>
+								<center><div class="drop_box" id="drop-1"></div></center>
+								<button id="bq1">Done</button>
+
+							</div>
+							<div class="ques_box" id="q2" style="display: none;">								
+								<h1> 2 x 4 = ? </h1>
+								<center><div class="drop_box" id="drop-2"></div></center>
+								<button id="bq2">Done</button>
+							</div>
+							<div class="ques_box" id="q3" style="display: none;">								
+								<h1> 13 x 9 = ? </h1>
+								<center><div class="drop_box" id="drop-3"></div></center>
+								<button id="bq3">Done</button>
+							</div>
+							<div class="ques_box" id="q4" style="display: none;">								
+								<h1> 11  x 8 = ? </h1>
+								<center><div class="drop_box" id="drop-4"></div></center>
+								<button id="bq4">Done</button>
+							</div>
+							<div class="ques_box" id="q5" style="display: none;">								
+								<h1> 9 x 12 = ? </h1>
+								<center><div class="drop_box" id="drop-5"></div></center>
+								<button id="bq5">Done</button>
+							</div>
+							<div class="ques_box" id="q6" style="display: none;">								
+								<h1> 13 x 13 = ? </h1>
+								<center><div class="drop_box" id="drop-6"></div></center>
+								<button id="bq6">Done</button>
+							</div>
+							<div class="ques_box" id="q7" style="display: none;">								
+								<h1> 6 x 7 = ? </h1>
+								<center><div class="drop_box" id="drop-7"></div></center>
+								<button id="bq7">Done</button>
+							</div>
+							<div class="ques_box" id="q8" style="display: none;">								
+								<h1> 5 x 6  = ? </h1>
+								<center><div class="drop_box" id="drop-8"></div></center>
+								<button id="bq8">Done</button>
+							</div>
+							<div class="ques_box" id="q9" style="display: none;">								
+								<h1> 9 x 14 = ? </h1>
+								<center><div class="drop_box" id="drop-9"></div></center>
+								<button id="bq9">Done</button>
+							</div>
+							<div class="ques_box" id="q10" style="display: none;">								
+								<h1> 14 x 14 = ? </h1>
+								<center><div class="drop_box" id="drop-10"></div></center>
+								<button id="bq10">Done</button>
+							</div>
+							
+							
+				</div>
+				<div class="col-xs-6 col-md-6 col-lg-6" style="background:#004134;border-radius: 12px; height: 200px;width: 100%; margin-top: 30px;">
+					<h2 class="ans_box ans_3" id="ans-3">117</h2>
+					<h2 class="ans_box ans_1"  id="ans-1">36</h2>
+					<h2 class="ans_box ans_10"  id="ans-10">196</h2>
+					<h2 class="ans_box ans_4"  id="ans-4">88</h2>
+					<h2 class="ans_box ans_6" id="ans-6">169</h2>
+					<h2 class="ans_box ans_7"  id="ans-7">42</h2>
+					<h2 class="ans_box ans_5"  id="ans-5">108</h2>
+					<h2 class="ans_box ans_9" id="ans-9">126</h2>
+					<h2 class="ans_box ans_2"  id="ans-2">8</h2>
+					<h2 class="ans_box ans_8"  id="ans-8">30</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<div class="modal" id="winModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="header">
+            <center><h1>Excellent</h1></center>
+        </div>
+        <center>
+            <img class="animated bounce" src="../img/check.png" style="width:110px;height: 100px"><br><br>
+        <button type="button" class="btn btn-primary"  onclick="window.location.href='#'">Next</button>
+        </center>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="winModal_2" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="header">
+            <center><h1>Try to Get Score</h1></center>
+        </div>
+        <center>
+            <img class="animated bounce" src="../img/check.png" style="width:110px;height: 100px"><br><br>
+        <button type="button" class="btn btn-primary"  onclick="window.location.href='#'">Next</button>
+        </center>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- section1 End -->
+
+
+<script src="../js/swiper.min.js"></script>
+<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/popper.min.js"></script>
+<script src="../js/jquery-ui.js"></script>
+<script src="../js/touch.js"></script>
+<script>
+$(document).ready(function(){
+	
+	
+});
+</script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+$(init);
+
+function init() {
+
+    $('.ans_box').each(function () {
+        var num = $(this).prop('id').replace('ans-', '');
+        $(this).data('number', num).attr('id', 'card' + num).draggable({
+            containment: '#content',
+            cursor: 'pointer',
+            revert: true
+        });
+
+    });
+
+    $('.drop_box').each(function () {
+        var num = $(this).prop('id').replace('drop-', '');
+        $(this).data('number', num).droppable({
+            hoverClass: 'hovered',
+            drop: handleCardDrop
+        });
+        
+    });
+}
+
+var totalCards = 10;
+var totalMatches = 0;
+
+function handleCardDrop(event, ui) {
+    var slotNumber = $(this).data('number');
+    var cardNumber = ui.draggable.data('number');
+    console.log(slotNumber);
+    //console.log($(this));
+    if (slotNumber == cardNumber) {
+        totalMatches++;
+        alert("your score is:"+totalMatches);
+        $("#bq1").click(function(){
+		$(".ans_"+cardNumber).empty();
+		$("#q2").show("slide", { direction: "right" }, 1000);
+		$("#q2").css("display","block");
+		 
+		// $("#q2").show("slide", { direction: "left" }, 1000); 
+		$("#q1,#q3,#q4,#q5,#q6,#q7,#q8,#q9,#q10").css("display","none");
+	});
+        $("#bq2").click(function(){
+		$(".ans_"+cardNumber).empty();
+		$("#q3").show("slide", { direction: "right" }, 1000);
+		$("#q3").css("display","block");
+		$("#q1,#q2,#q4,#q5,#q6,#q7,#q8,#q9,#q10").css("display","none");
+	});
+	$("#bq3").click(function(){
+		$(".ans_"+cardNumber).empty();
+		$("#q4").show("slide", { direction: "right" }, 1000);
+		$("#q4").css("display","block");
+		$("#q1,#q3,#q2,#q5,#q6,#q7,#q8,#q9,#q10").css("display","none");
+	});
+	$("#bq4").click(function(){
+		$(".ans_"+cardNumber).empty();
+		$("#q5").show("slide", { direction: "right" }, 1000);
+		$("#q5").css("display","block");
+		$("#q1,#q3,#q4,#q2,#q6,#q7,#q8,#q9,#q10").css("display","none");
+	});
+	$("#bq5").click(function(){
+		$(".ans_"+cardNumber).empty();
+		$("#q6").show("slide", { direction: "right" }, 1000);
+		$("#q6").css("display","block");
+		$("#q1,#q3,#q4,#q5,#q2,#q7,#q8,#q9,#q10").css("display","none");
+	});
+	$("#bq6").click(function(){
+		$(".ans_"+cardNumber).empty();
+		$("#q7").show("slide", { direction: "right" }, 1000);
+		$("#q7").css("display","block");
+		$("#q1,#q3,#q4,#q5,#q6,#q2,#q8,#q9,#q10").css("display","none");
+	});
+	$("#bq7").click(function(){
+		$(".ans_"+cardNumber).empty();
+		$("#q8").show("slide", { direction: "right" }, 1000);
+		$("#q8").css("display","block");
+		$("#q1,#q3,#q4,#q5,#q6,#q7,#q2,#q9,#q10").css("display","none");
+	});
+	$("#bq8").click(function(){
+		$(".ans_"+cardNumber).empty();
+		$("#q9").show("slide", { direction: "right" }, 1000);
+		$("#q9").css("display","block");
+		$("#q1,#q3,#q4,#q5,#q6,#q7,#q8,#q2,#q10").css("display","none");
+	});
+	$("#bq9").click(function(){
+		$(".ans_"+cardNumber).empty();
+		$("#q10").show("slide", { direction: "right" }, 1000);
+		$("#q10").css("display","block");
+		$("#q1,#q3,#q4,#q5,#q6,#q7,#q8,#q9,#q2").css("display","none");
+	});
+	$("#bq10").click(function(){
+		$(".ans_"+cardNumber).empty(); 
+		if(totalMatches <= 9){
+			$("#winModal_2").modal();
+		}		
+		$("#q1,#q3,#q4,#q5,#q6,#q7,#q8,#q9,#q2").css("display","none");
+	});
+        
+        
+        // ui.draggable.addClass('correct');
+        // ui.draggable.addClass('fade');
+        ui.draggable.draggable('disable');
+        $(this).droppable('disable');
+        // $(this).addClass('fade');
+        ui.draggable.draggable('option', 'revert', false);
+    }
+
+    if (totalMatches == totalCards) {
+        // success
+        // alert("success");
+        $("#winModal").modal();
+    }
+}
+
+});
+</script>
+</body>
+</html>

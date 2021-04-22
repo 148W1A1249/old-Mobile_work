@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>welcome</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/Addition.css">
+</head>
+<body>
+
+<!-- secton 1 start -->
+
+	<div class="container head_container">		
+		<div class="col-xs-10 col-md-10 col-lg-10">
+	     	<h2 class="head1">Fill the Box with Suitable <span>Answer </span></h2>
+	     	<center><span class="head2">Frequency charts </span></center>
+	     	<label>Note: Negative marking exams ( If u put wrong Answer 0.5 marks are reduce to your score )</label>
+		</div>
+	</div>
+	     	
+		
+
+	<div class="conatiner-fluid head_2_container" >
+		<!-- <center><img src="../img/maths.png" style="margin-top: 10px;margin-bottom: 10px;"></center> -->
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6 col-md-6 col-lg-6" style="height: auto;width: 100%;padding: 15px;">
+					
+							<div class="ques_box" id="q1" style="background-color: white;">	
+								<p>​The Silvergrove Ski Resort asked its guests how many times they went sledging last winter.</p>
+								<center><img class="chart_img" src="../img/charts_1.png"></center>
+								<p>How many guests are there in all?</p>
+								<center><div class="drop_box" id="drop-1"></div></center>
+								<button id="bq1">Done</button>
+
+							</div>
+							<div class="ques_box" id="q2" style="display: none;background-color: white;">	
+								<p>​A marketing research firm asked people how many times they visited the mall last month.</p>
+								<center><img class="chart_img" src="../img/charts_2.png"></center>
+								<p>How many people went to the mall fewer than 4 times?</p>
+								<center><div class="drop_box" id="drop-2"></div></center>
+								<button id="bq2">Done</button>
+							</div>
+							<div class="ques_box" id="q3" style="display: none;background-color: white;">
+								<p>​Toby counted the number of biscuits eaten by each customer at last week's bake sale.</p>
+								<center><img class="chart_img" src="../img/charts_3.png"></center>
+								<p>How many customers ate more than 4 biscuits last week?</p>
+								<center><div class="drop_box" id="drop-3"></div></center>
+								<button id="bq3">Done</button>
+							</div>
+							<div class="ques_box" id="q4" style="display: none;background-color: white;">	
+								<p>​A tennis fan counted the number of matches won by his favourite players last summer.</p>
+								<center><img class="chart_img" src="../img/charts_4.png"></center>
+								<p>How many players won exactly 2 matches last summer?</p>
+								<center><div class="drop_box" id="drop-4"></div></center>
+								<button id="bq4">Done</button>
+							</div>
+							<div class="ques_box" id="q5" style="display: none;background-color: white;">	
+								<p>​For Earth Day, Campbell High's environmental club tracked the number of seeds planted by its members.</p>
+								<center><img class="chart_img" src="../img/charts_5.png"></center>
+								<p>How many members planted at least 2 seeds?</p>
+								<center><div class="drop_box" id="drop-5"></div></center>
+								<button id="bq5">Done</button>
+							</div>
+							<div class="ques_box" id="q6" style="display: none;background-color: white;">	
+								<p>​A statistics lab required students to draw cards numbered between 1 and 6 and track the results.</p>
+								<center><img class="chart_img" src="../img/charts_6.png"></center>
+								<p>Which number was drawn the fewest times?</p>
+								<center><div class="drop_box" id="drop-6"></div></center>
+								<button id="bq6">Done</button>
+							</div>
+							<div class="ques_box" id="q7" style="display: none;background-color: white;">	
+								<p>​Several children compared how many thank-you notes they had written during the previous month.</p>
+								<center><img class="chart_img" src="../img/charts_7.png"></center>
+								<p>How many children are there in all? </p>
+								<center><div class="drop_box" id="drop-7"></div></center>
+								<button id="bq7">Done</button>
+							</div>
+							<div class="ques_box" id="q8" style="display: none;background-color: white;">	
+								<p>​Mr. Hutchinson recorded the scores of his students on the most recent maths quiz.</p>
+								<center><img class="chart_img" src="../img/charts_8.png"></center>
+								<p>Which score did the greatest number of people receive?</p>
+								<center><div class="drop_box" id="drop-8"></div></center>
+								<button id="bq8">Done</button>
+							</div>
+							<div class="ques_box" id="q9" style="display: none;background-color: white;">	
+								<p>​A statistician analysed the number of runs scored by players last season.</p>
+								<center><img class="chart_img" src="../img/charts_9.png"></center>
+								<p>How many players scored exactly 6 runs last season?</p>
+								<center><div class="drop_box" id="drop-9"></div></center>
+								<button id="bq9">Done</button>
+							</div>
+							<div class="ques_box" id="q10" style="display: none;background-color: white;">	
+								<p>​To determine whether people make fewer trips to the films when the economy is bad, a reporter asked people how many films they saw last month.</p>
+								<center><img class="chart_img" src="../img/charts_10.png"></center>
+								<p>How many people went to the films fewer than 4 times?</p>
+								<center><div class="drop_box" id="drop-10"></div></center>
+								<button id="bq10">Done</button>
+							</div>
+							
+							
+				</div>
+				<div class="keyword" style="display: none;">
+					<div class="close"><label><b>X</b></label></div>
+					<div style="clear:both;">
+					<div class="sol_1" style="display: none;">
+						<center><label>Solution</label></center>
+						<p>Add the frequencies for each row.</p>
+						<p>Add:</p>
+						<p>12 + 1 + 4 + 18 + 16 + 20 + 2 = 73</p>
+						<p>There are 73 guests in all.</p>
+					</div>
+					<div class="sol_2" style="display: none;">
+						<center><label>Solution</label></center>
+						<p>Find the rows for 0, 1, 2, and 3 times. Add the frequencies for these rows.</p>
+						<p>Add:</p>
+						<p>6 + 9 + 11 + 3 = 29</p>
+						<p>29 people went to the mall fewer than 4 times.</p>
+					</div>
+					<div class="sol_3" style="display: none;">
+						<center><label>Solution</label></center>
+						<p>Find the row for 5 biscuits last week and read the frequency. The frequency is 15.</p>
+						<p>15 customers ate more than 4 biscuits last week.</p>
+					</div>	
+					<div class="sol_4" style="display: none;">
+						<center><label>Solution</label></center>
+						<p>Find the row for 2 matches last summer and read the frequency. The frequency is 12.</p>
+						<p>12 players won exactly 2 matches last summer.</p>
+					</div>	
+					<div class="sol_5" style="display: none;">
+						<center><label>Solution</label></center>
+						<p>Find the rows for 2, 3, and 4 seeds. Add the frequencies for these rows.</p>
+						<p>Add:</p>
+						<p>7 + 12 + 8 = 27</p>
+						<p>27 members planted at least 2 seeds.</p>
+					</div>	
+					<div class="sol_6" style="display: none;">
+						<center><label>Solution</label></center>
+						<p>Look at the frequency column. Find the least frequency. The least frequency is 0, which is in the row for 1. 1 was drawn the fewest times.</p>
+					</div>	
+					<div class="sol_7" style="display: none;">
+						<center><label>Solution</label></center>
+						<p>Add the frequencies for each row.</p>
+						<p>Add:</p>
+						<p>14 + 2 + 12 + 8 = 36</p>
+						<p>There are 36 children in all.</p>
+					</div>			
+					<div class="sol_8" style="display: none;"> = hours
+						<center><label>Solution</label></center>
+						<p>Look at the frequency column. Find the greatest frequency. The greatest frequency is 18, which is in the row for 9. The greatest number of people scored 9.</p>
+					</div>		
+					<div class="sol_9" style="display: none;">
+						<center><label>Solution</label></center>
+						<p>Find the row for 6 runs last season and read the frequency. The frequency is 17.</p>
+						<p>17 players scored exactly 6 runs last season.</p>
+					</div>
+					<div class="sol_10" style="display: none;">
+						<center><label>Solution</label></center>
+						<p>Find the rows for 0, 1, 2, and 3 times. Add the frequencies for these rows.</p>
+						<p>Add:</p>
+						<p>2 + 1 + 0 + 20 = 23</p>
+						<p>23 people went to the films fewer than 4 times.</p>
+					</div>					
+					</div>
+					
+				</div>
+				<div class="col-xs-6 col-md-6 col-lg-6" style="background:#004134;border-radius: 12px; height: 200px;width: 100%; margin-top: 30px;">
+					<h2 class="ans_box ans_7" id="ans-7">36</h2>
+					<h2 class="ans_box ans_1" id="ans-1">73</h2>
+					<h2 class="ans_box ans_5" id="ans-5">27</h2>
+					<h2 class="ans_box ans_9" id="ans-9">17</h2>
+					<h2 class="ans_box ans_10" id="ans-10">23</h2>
+					<h2 class="ans_box ans_8" id="ans-8">9</h2>
+					<h2 class="ans_box ans_2" id="ans-2">29</h2>
+					<h2 class="ans_box ans_3" id="ans-3">15</h2>
+					<h2 class="ans_box ans_4" id="ans-4">12</h2>
+					<h2 class="ans_box ans_6" id="ans-6">1</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<div class="modal" id="winModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="header">
+            <center><h1>Excellent</h1></center>
+        </div>
+        <center>
+            <img class="animated bounce" src="../img/check.png" style="width:110px;height: 100px"><br><br>
+        <button type="button" class="btn btn-primary"  onclick="window.location.href='#'">Next</button>
+        </center>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal" id="winModal_2" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="header">
+            <center><h1>Try to Get Score</h1></center>
+        </div>
+        <center>
+            <img class="animated bounce" src="../img/check.png" style="width:110px;height: 100px"><br><br>
+        <button type="button" class="btn btn-primary"  onclick="window.location.href='#'">Next</button>
+        </center>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- section1 End -->
+
+
+<script src="../js/swiper.min.js"></script>
+<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/popper.min.js"></script>
+<script src="../js/jquery-ui.js"></script>
+<script src="../js/touch.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+
+$(init);
+
+function init() {
+
+    $('.ans_box').each(function () {
+        var num = $(this).prop('id').replace('ans-', '');
+        $(this).data('number', num).attr('id', 'card' + num).draggable({
+            containment: '#content',
+            cursor: 'pointer',
+            revert: false
+        });
+
+    });
+
+    $('.drop_box').each(function () {
+        var num = $(this).prop('id').replace('drop-', '');
+        $(this).data('number', num).droppable({
+            hoverClass: 'hovered',
+            drop: handleCardDrop
+        });
+        
+    });
+}
+
+var totalCards = 10;
+var totalMatches = 0;
+
+function handleCardDrop(event, ui) {
+    var slotNumber = $(this).data('number');
+    var cardNumber = ui.draggable.data('number');
+    // console.log(slotNumber);
+    //console.log($(this));
+    if (slotNumber == cardNumber) {    	
+			$(".drop_box").css("background","green");
+			
+	        totalMatches++;
+	        alert("your score is:"+totalMatches);
+	       $("#bq1").click(function(){
+			
+			$("#q2").show("slide", { direction: "right" }, 1000);
+			$("#q2").css("display","block");
+			$(".drop_box").css("background","#004134");
+			 
+			// $("#q2").show("slide", { direction: "left" }, 1000); 
+			$("#q1,#q3,#q4,#q5,#q6,#q7,#q8,#q9,#q10").css("display","none");
+		});
+		$("#bq2").click(function(){
+			
+			$("#q3").show("slide", { direction: "right" }, 1000);
+			$("#q3").css("display","block");
+			$(".drop_box").css("background","#004134");
+			$("#q1,#q2,#q4,#q5,#q6,#q7,#q8,#q9,#q10").css("display","none");
+		});
+		$("#bq3").click(function(){
+			
+			$("#q4").show("slide", { direction: "right" }, 1000);
+			$("#q4").css("display","block");
+			$(".drop_box").css("background","#004134");
+			$("#q1,#q3,#q2,#q5,#q6,#q7,#q8,#q9,#q10").css("display","none");
+		});
+		$("#bq4").click(function(){
+			
+			$("#q5").show("slide", { direction: "right" }, 1000);
+			$("#q5").css("display","block");
+			$(".drop_box").css("background","#004134");
+			$("#q1,#q3,#q4,#q2,#q6,#q7,#q8,#q9,#q10").css("display","none");
+		});
+		$("#bq5").click(function(){
+			
+			$("#q6").show("slide", { direction: "right" }, 1000);
+			$("#q6").css("display","block");
+			$(".drop_box").css("background","#004134");
+			$("#q1,#q3,#q4,#q5,#q2,#q7,#q8,#q9,#q10").css("display","none");
+		});
+		$("#bq6").click(function(){
+			
+			$("#q7").show("slide", { direction: "right" }, 1000);
+			$("#q7").css("display","block");
+			$(".drop_box").css("background","#004134");
+			$("#q1,#q3,#q4,#q5,#q6,#q2,#q8,#q9,#q10").css("display","none");
+		});
+		$("#bq7").click(function(){
+			
+			$("#q8").show("slide", { direction: "right" }, 1000);
+			$("#q8").css("display","block");
+			$(".drop_box").css("background","#004134");
+			$("#q1,#q3,#q4,#q5,#q6,#q7,#q2,#q9,#q10").css("display","none");
+		});
+		$("#bq8").click(function(){
+			
+			$("#q9").show("slide", { direction: "right" }, 1000);
+			$("#q9").css("display","block");
+			$(".drop_box").css("background","#004134");
+			$("#q1,#q3,#q4,#q5,#q6,#q7,#q8,#q2,#q10").css("display","none");
+		});
+		$("#bq9").click(function(){
+			
+			$("#q10").show("slide", { direction: "right" }, 1000);
+			$("#q10").css("display","block");
+			$(".drop_box").css("background","#004134");
+			$("#q1,#q3,#q4,#q5,#q6,#q7,#q8,#q9,#q2").css("display","none");
+		});
+		$("#bq10").click(function(){
+			 
+			if(totalMatches <= 9){
+				$("#winModal_2").modal();
+			}		
+			$("#q1,#q3,#q4,#q5,#q6,#q7,#q8,#q9,#q2").css("display","none");
+		});
+
+		$(".close").click(function(){
+			$(".keyword").css("display","none");
+		});
+	        
+	        // ui.draggable.addClass('correct');
+	        // ui.draggable.addClass('fade');
+	        // ui.draggable.draggable('disable');
+	        // $(this).droppable('disable');
+	        // $(this).addClass('fade');
+	        ui.draggable.draggable('option', 'revert', true);
+	    }
+    else{
+    	$(".drop_box").css("background","red");
+
+    	totalMatches = totalMatches - 0.5;
+    	$(".keyword").css("display","block");
+    	$(".sol_"+slotNumber).css("display","block");
+    	
+        alert("your score is:"+totalMatches);
+       $("#bq1").click(function(){
+		
+		$("#q2").show("slide", { direction: "right" }, 1000);
+		$("#q2").css("display","block");		
+    	$(".keyword").css("display","none");
+    	$(".sol_1").css("display","none");
+		$(".drop_box").css("background","#004134");
+		 
+		// $("#q2").show("slide", { direction: "left" }, 1000); 
+		$("#q1,#q3,#q4,#q5,#q6,#q7,#q8,#q9,#q10").css("display","none");
+	});
+	$("#bq2").click(function(){
+		
+		$("#q3").show("slide", { direction: "right" }, 1000);
+		$("#q3").css("display","block");		
+    	$(".keyword").css("display","none");
+    	$(".sol_1").css("display","none");
+		$(".drop_box").css("background","#004134");
+		$("#q1,#q2,#q4,#q5,#q6,#q7,#q8,#q9,#q10").css("display","none");
+	});
+	$("#bq3").click(function(){
+		
+		$("#q4").show("slide", { direction: "right" }, 1000);
+		$("#q4").css("display","block");		
+    	$(".keyword").css("display","none");
+    	$(".sol_1").css("display","none");
+		$(".drop_box").css("background","#004134");
+		$("#q1,#q3,#q2,#q5,#q6,#q7,#q8,#q9,#q10").css("display","none");
+	});
+	$("#bq4").click(function(){
+		
+		$("#q5").show("slide", { direction: "right" }, 1000);
+		$("#q5").css("display","block");		
+    	$(".keyword").css("display","none");
+    	$(".sol_1").css("display","none");
+		$(".drop_box").css("background","#004134");
+		$("#q1,#q3,#q4,#q2,#q6,#q7,#q8,#q9,#q10").css("display","none");
+	});
+	$("#bq5").click(function(){
+		
+		$("#q6").show("slide", { direction: "right" }, 1000);
+		$("#q6").css("display","block");		
+    	$(".keyword").css("display","none");
+    	$(".sol_1").css("display","none");
+		$(".drop_box").css("background","#004134");
+		$("#q1,#q3,#q4,#q5,#q2,#q7,#q8,#q9,#q10").css("display","none");
+	});
+	$("#bq6").click(function(){
+		
+		$("#q7").show("slide", { direction: "right" }, 1000);
+		$("#q7").css("display","block");		
+    	$(".keyword").css("display","none");
+    	$(".sol_1").css("display","none");
+		$(".drop_box").css("background","#004134");
+		$("#q1,#q3,#q4,#q5,#q6,#q2,#q8,#q9,#q10").css("display","none");
+	});
+	$("#bq7").click(function(){
+		
+		$("#q8").show("slide", { direction: "right" }, 1000);
+		$("#q8").css("display","block");		
+    	$(".keyword").css("display","none");
+    	$(".sol_1").css("display","none");
+		$(".drop_box").css("background","#004134");
+		$("#q1,#q3,#q4,#q5,#q6,#q7,#q2,#q9,#q10").css("display","none");
+	});
+	$("#bq8").click(function(){
+		
+		$("#q9").show("slide", { direction: "right" }, 1000);
+		$("#q9").css("display","block");		
+    	$(".keyword").css("display","none");
+    	$(".sol_1").css("display","none");
+		$(".drop_box").css("background","#004134");
+		$("#q1,#q3,#q4,#q5,#q6,#q7,#q8,#q2,#q10").css("display","none");
+	});
+	$("#bq9").click(function(){
+		
+		$("#q10").show("slide", { direction: "right" }, 1000);
+		$("#q10").css("display","block");		
+    	$(".keyword").css("display","none");
+    	$(".sol_1").css("display","none");
+		$(".drop_box").css("background","#004134");
+		$("#q1,#q3,#q4,#q5,#q6,#q7,#q8,#q9,#q2").css("display","none");
+	});
+	$("#bq10").click(function(){
+		 
+		if(totalMatches <= 9){
+			$("#winModal_2").modal();
+		}		
+		$("#q1,#q3,#q4,#q5,#q6,#q7,#q8,#q9,#q2").css("display","none");
+	});
+
+	$(".close").click(function(){
+		$(".keyword").css("display","none");
+	});
+
+	        // ui.draggable.addClass('correct');
+	        // ui.draggable.addClass('fade');
+	        // ui.draggable.draggable('disable');
+	        // $(this).droppable('disable');
+	        // $(this).addClass('fade');
+	        ui.draggable.draggable('option', 'revert', true);
+    }
+
+    if (totalMatches == totalCards) {
+        // success
+        // alert("success");
+        $("#winModal").modal();
+    }
+}
+
+});
+</script>
+</body>
+</html>

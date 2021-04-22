@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>welcome</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/eng_verb.css">
+</head>
+<body style="">
+
+<!-- secton 1 start -->
+
+    <div class="container" style="width: 100%;margin-top: 10px;margin-left: 0;font-weight: bolder;letter-spacing: 1px;">
+        
+        <div class="col-xs-10 col-md-10 col-lg-10">
+            <center><h1 style="font-weight: bolder;">Verb practice</h1></center>
+        </div>
+    </div>    
+
+<!-- section1 End -->
+
+<!-- section2 Start -->
+  <div class="container question">
+    <p class="type">Select the <b>helping</b> verb.</p> 
+    <b><h3 style="padding: 10px;font-weight: bold;margin: 20px;">
+        <span class="word" id="word_1"  >Millie</span>
+        <span class="word" id="word_2" >and</span>
+        <span class="word" id="word_3" >Tristen</span>
+        <span class="word" id="word_4" >are</span>
+        <span class="word" id="word_5" >designing</span>
+        <span class="word" id="word_6" >clothes</span>
+        <span class="word" id="word_7" >for</span>
+        <span class="word" id="word_8" >a</span>
+        <span class="word" id="word_9" >fashion</span>
+        <span class="word" id="word_10" >show.</span>
+    </h3></b>
+    <button class="btn_next" onclick="window.location.href='eng_verb_10.html'">Next</button>
+  </div>
+<!-- section2 End -->
+        
+  <div class="containers correct" style="display: none;">
+        <center><img src="../img/check.png" width="30%" style="margin-top:40px;"></center>
+    </div> 
+   
+<section class="keyword" style="display: none;">
+    <center><label>Remember Keyword</label></center>
+    <p>
+        A helping verb comes before a main verb. It helps the main verb show action.</p>
+<p>I <content style="">am resting.</content></p>
+<p>The helping verb is <content>am</content>. The main verb is <content>resting.</content></p>
+<p>Here are some common helping verbs:</p>
+<p>forms of <content> to be: am, are, is, was, were</content></p>
+<p>forms of <content> to have:   has, have, had</content></p>
+<p>forms of <content> to do: do, does, did</content></p>
+<p>modal verbs:    <content>can, could, may, might, will, would, shall, should, must</content></p>
+<p>The helping verb always goes before the main verb, but the two verbs are not always next to each other.</p>
+<p>I <content>am</content> finally <content>resting.</content> </p>
+
+<p>The helping verb is <content>are</content>. it is followed by the main verb <content>designing</content></p>
+</section>
+
+
+<!-- end -->
+ <!-- <div class="container" style="margin-top: 30px;">
+        <center>
+            <img onclick="window.location.href='time_2.html'" src="../img/arrow.svg" width="50px" style="float: right;">
+        </center>
+    </div>
+
+    <div class="modal" id="winModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="header">
+                <center><h1>Excellent</h1></center>
+            </div>
+            <center>
+                <img class="animated bounce" src="../img/check.png" style="width:110px;height: 100px"><br><br>
+            <button type="button" class="btn btn-primary"  onclick="window.location.href='#'">Next</button>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div> -->
+<!-- end -->
+
+<script src="../js/swiper.min.js"></script>
+<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/popper.min.js"></script>
+<script src="../js/jquery-ui.js"></script>
+<script src="../js/touch.js"></script>
+<script>
+$(document).ready(function(){
+
+    $("#word_4").click(function(){
+        $("#word_4").css("background-color","yellow");
+        $("#word_4").css("color","green");
+        $(".correct").css("display","block");
+        $('#word_4').prepend('<img src="../img/okay.png" />');
+         $("#word_1,#word_2,#word_3,#word_4,#word_5,#word_6,#word_7,#word_8,#word_9,#word_10").off('click');
+    });
+    $("#word_1").click(function(){
+        $("#word_1").css("color","red");
+        $(".keyword").css("display","block");
+        $('#word_1').prepend('<img src="../img/nokay.png" />');
+         $("#word_1,#word_2,#word_3,#word_4,#word_5,#word_6,#word_7,#word_8,#word_9,#word_10").off('click');
+    });
+    $("#word_2").click(function(){
+        $("#word_2").css("color","red");
+        $(".keyword").css("display","block");
+        $('#word_2').prepend('<img src="../img/nokay.png" />');
+         $("#word_1,#word_2,#word_3,#word_4,#word_5,#word_6,#word_7,#word_8,#word_9,#word_10").off('click');
+    });
+
+    $("#word_3").click(function(){
+        $("#word_3").css("color","red");
+        $(".keyword").css("display","block");
+        $('#word_3').prepend('<img src="../img/nokay.png" />');
+        $("#word_1,#word_2,#word_3,#word_4,#word_5,#word_6,#word_7,#word_8,#word_9,#word_10").off('click');
+    });
+    $("#word_5").click(function(){
+        $("#word_5").css("color","red");
+        $(".keyword").css("display","block");
+        $('#word_5').prepend('<img src="../img/nokay.png" />');
+         $("#word_1,#word_2,#word_3,#word_4,#word_5,#word_6,#word_7,#word_8,#word_9,#word_10").off('click');
+    });
+    $("#word_6").click(function(){
+        $("#word_6").css("color","red");
+        $(".keyword").css("display","block");
+        $('#word_6').prepend('<img src="../img/nokay.png" />');
+         $("#word_1,#word_2,#word_3,#word_4,#word_5,#word_6,#word_7,#word_8,#word_9,#word_10").off('click');
+    });
+    $("#word_7").click(function(){
+        $("#word_7").css("color","red");
+        $(".keyword").css("display","block");
+        $('#word_7').prepend('<img src="../img/nokay.png" />');
+         $("#word_1,#word_2,#word_3,#word_4,#word_5,#word_6,#word_7,#word_8,#word_9,#word_10").off('click');
+    });
+    $("#word_8").click(function(){
+        $("#word_8").css("color","red");
+        $(".keyword").css("display","block");
+        $('#word_8').prepend('<img src="../img/nokay.png" />');
+         $("#word_1,#word_2,#word_3,#word_4,#word_5,#word_6,#word_7,#word_8,#word_9,#word_10").off('click');
+    });
+    $("#word_9").click(function(){
+        $("#word_9").css("color","red");
+        $(".keyword").css("display","block");
+        $('#word_9').prepend('<img src="../img/nokay.png" />');
+         $("#word_1,#word_2,#word_3,#word_4,#word_5,#word_6,#word_7,#word_8,#word_9,#word_10").off('click');
+    });
+    $("#word_10").click(function(){
+        $("#word_10").css("color","red");
+        $(".keyword").css("display","block");
+        $('#word_10').prepend('<img src="../img/nokay.png" />');
+         $("#word_1,#word_2,#word_3,#word_4,#word_5,#word_6,#word_7,#word_8,#word_9").off('click');
+    });
+});
+
+</script>

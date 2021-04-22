@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>welcome</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/Addition.css">
+</head>
+<body>
+
+<!-- secton 1 start -->
+
+	<div class="container head_container">		
+		<div class="col-xs-10 col-md-10 col-lg-10">
+	     	<h2 class="head1">Check the Box with Suitable <span>Answer </span></h2>
+	     	<center><span class="head2">Round money amounts </span></center>
+		</div>
+	</div>
+
+	<div class="conatiner-fluid head_2_container">
+		<center><img src="../img/money.jpg" class="image"></center>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6 col-md-6 col-lg-6" style="height: auto;width: 100%;padding: 15px;">
+
+					<div class="ques_box" id="q1">								
+						<label>What is ₹408 rounded to the nearest 100 rupees?</label>
+					</div>	
+				</div>
+				<div class="keyword" style="display: none;">
+					<div class="close"><label><b>X</b></label></div>
+					<div style="clear:both;">
+						<center><label>Remember Keyword</label></center>
+						<p>Find the place you want to round. Look one place to the right. If the digit is less than 5, round down. If the digit is 5 or higher, round up.</p>
+						<br>
+						<center><label>Solution</label></center>
+						<p>First, find the digit in the hundreds place. This is the place you want to round:</p>
+						<p>₹408</p>
+						<p>Now look one place to the right:</p>
+						<p>₹408</p>
+						<p>0 is less than 5, so you will round down. Replace all the digits to the right of the hundreds place by zeroes:</p>
+						<p>₹408 → ₹400</p>									
+					</div>
+					
+				</div>
+				<div class="col-xs-6 col-md-6 col-lg-6" style="background:#004134;border-radius: 12px; height: auto;width: 100%; margin-top: 30px;">
+					<center>
+						<div class="row">
+						<div class="col-xs-6 col-md-6 col-lg-6">							
+							<button class="ans-button" id="ans_1">500</button>
+						</div>
+						<div class="col-xs-6 col-md-6 col-lg-6">							
+							<button class="ans-button" id="ans_2">410</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 col-md-6 col-lg-6">							
+							<button class="ans-button" id="ans_3">400</button>
+						</div>
+						<div class="col-xs-6 col-md-6 col-lg-6">							
+							<button class="ans-button" id="ans_4">300</button>
+						</div>
+					</div>
+					</center>					
+					<button class="next-button" onclick="window.location.href='math_round_money_8.html'">Next</button>
+					<button class="prev-button" onclick="window.location.href='math_round_money_6.html'">preview</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<!-- <div class="modal" id="winModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="header">
+            <center><h1>Excellent</h1></center>
+        </div>
+        <center>
+            <img class="animated bounce" src="../img/check.png" style="width:110px;height: 100px"><br><br>
+        <button type="button" class="btn btn-primary"  onclick="window.location.href='#'">Next</button>
+        </center>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal" id="winModal_2" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="header">
+            <center><h1>Try to Get Score</h1></center>
+        </div>
+        <center>
+            <img class="animated bounce" src="../img/check.png" style="width:110px;height: 100px"><br><br>
+        <button type="button" class="btn btn-primary"  onclick="window.location.href='#'">Next</button>
+        </center>
+      </div>
+    </div>
+  </div>
+</div> -->
+<!-- section1 End -->
+
+
+<script src="../js/swiper.min.js"></script>
+<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/popper.min.js"></script>
+<script src="../js/jquery-ui.js"></script>
+<script src="../js/touch.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$("#ans_3").click(function(){
+			$("#ans_3").css("background","green");
+			$("#ans_1,#ans_2,#ans_3,#ans_4").off("click");
+			$("#ans_3").prepend('<img src="../img/okay.png" />');
+		});
+
+		$("#ans_1").click(function(){
+			$("#ans_1").css("background","red");
+			$(".keyword").css("display","block");
+			$("#ans_1,#ans_2,#ans_3,#ans_4").off("click");
+			$("#ans_1").prepend('<img src="../img/nokay.png" />');
+		});
+		$("#ans_2").click(function(){
+			$("#ans_2").css("background","red");
+			$(".keyword").css("display","block");
+			$("#ans_1,#ans_2,#ans_3,#ans_4").off("click");
+			$("#ans_2").prepend('<img src="../img/nokay.png" />');
+		});
+		$("#ans_4").click(function(){
+			$("#ans_4").css("background","red");
+			$(".keyword").css("display","block");
+			$("#ans_1,#ans_2,#ans_3,#ans_4").off("click");
+			$("#ans_4").prepend('<img src="../img/nokay.png" />');
+		});
+
+
+		$(".close").click(function(){
+			$(".keyword").css("display","none");
+		});
+	});
+</script>
+
+</body>
+</html>
